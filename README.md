@@ -21,6 +21,10 @@ Step 1:
 ------------------------------
 ![Step_1](images/step1.PNG)
 
+Step 2:
+------------------------------
+![Step_2](images/step2.PNG)
+
 No specific prerequisites or software dependencies are required.
 git clone https://github.com/ZaidSattar/coursecompass.git
 cd coursecompass
