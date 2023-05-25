@@ -17,10 +17,8 @@ Course Compass is a powerful AI-driven tool that digitizes your course syllabus.
 ## Installation
 To install Course Compass, clone the repository and follow the installation guide:
 
------------------------------------------------------------------
-git clone https://github.com/ZaidSattar/coursecompass.git
-cd coursecompass
------------------------------------------------------------------
+Step 1:
+![Step_1](images/step1.png)
 
 No specific prerequisites or software dependencies are required.
 git clone https://github.com/ZaidSattar/coursecompass.git
