@@ -1,6 +1,5 @@
 # Course Compass
 
-<span style="color:blue">Course Compass</span>
 
 
 
