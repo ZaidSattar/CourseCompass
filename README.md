@@ -26,9 +26,6 @@ Step 2:
 ![Step_2](images/step2.PNG)
 
 No specific prerequisites or software dependencies are required.
-git clone https://github.com/ZaidSattar/coursecompass.git
-cd coursecompass
-No specific prerequisites or software dependencies are required.
 
 ## Usage
 To use Course Compass, simply run the program on a live server and upload your syllabus in PDF format. The AI will automatically extract and organize the relevant details.
