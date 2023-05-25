@@ -19,14 +19,14 @@ git clone https://github.com/ZaidSattar/coursecompass.git
 cd coursecompass
 No specific prerequisites or software dependencies are required.
 
-Usage
+## Usage
 To use Course Compass, simply run the program on a live server and upload your syllabus in PDF format. The AI will automatically extract and organize the relevant details.
 
-Contributing
+## Contributing
 We welcome contributions! If you're interested in improving Course Compass, feel free to fork the repository, make your changes, and create a pull request. If you're new to contributing to open-source projects on GitHub, this guide may be helpful.
 
-Examples
+## Examples
 Detailed examples and visual guides will be added soon.
 
-License
+## License
 Course Compass is an open-source project. Currently, it is unlicensed and free to use. Please consider contributing to improve the tool!
