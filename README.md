@@ -1,4 +1,5 @@
-# Course Compass
+# Course Compass # <span style="color:blue">Course Compass</span>
+
 
 ## Table of Contents
 1. [About](#about)
