@@ -16,19 +16,15 @@ def analyze_pdf(filename):
         pdf_reader = PyPDF2.PdfReader(file)
         num_pages = len(pdf_reader.pages)
 
-        # Extract text from each page and combine into a single string
         pdf_text = ""
         for page_number in range(num_pages):
             page = pdf_reader.pages[page_number]
             pdf_text += page.extract_text()
 
-        # Convert the text to lower case for case-insensitive search
         pdf_text = pdf_text.lower()
 
-        # Look for keywords in the text
         keyword_contexts = []
         for keyword in keywords:
-            # Convert the keyword to lower case for case-insensitive search
             keyword = keyword.lower()
 
             start_index = 0
@@ -65,5 +61,19 @@ def analyze_pdf(filename):
         )
         answer = response.choices[0].message.content.strip()
 
-        # Print the generated answer
-        print(answer)
+        window = tk.Tk()
+        window.title("Course Compass")
+        window.geometry("800x800")
+        window.configure(bg="#f0f0f0")
+
+        answer_label = tk.Label(window, text=answer, wraplength=400, justify="center", bg="#f0f0f0", fg="#333333", font=("Arial", 12))
+        answer_label.pack(padx=20, pady=20)
+
+        def close_window():
+            window.destroy()
+
+        close_button = tk.Button(window, text="Close", command=close_window, width=10, height=2, bg="#ff5757", fg="white", font=("Arial", 12))
+        close_button.pack(pady=10)
+
+        window.mainloop()
+
