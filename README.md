@@ -30,13 +30,13 @@ To run Course Compass, you need to ensure that the following dependencies are in
 Suppose you have a course syllabus for "CS 2034B Data Analytics" from Western University. After uploading the PDF, Course Compass will extract the following information:
 
 
-Course: CS 2034b Data Analytics
-Prerequisites: NONE
-Antirequisites: NONE
-Instructor: Stephen Watt
-Methods of Evaluation: Assignments(4) - 15%, Weekly Labs(20%), Midterm(20%), Final Exam (45%)
-Assignment Information: Assignment 1 - Due Feb 2nd (3%), Assignment 2 - Due Feb 23 (4%), Assignment 3 - Due Mar 9 (4%), Assignment 4 - Due Mar 10 (4%)
-Additional Information: You may contact the course instructor via e-mail with brief questions regarding course material or clarification of assignments. However, please first check the course website for answers to frequently asked questions, or to see if the information is already there, before e-mailing the instructor. You must include CS2034 in the subject line (otherwise it might get filtered as spam). Please send E-mail from your UWO account and send E-mail in plain text format.
+Course: CS 2034b Data Analytics<br>
+Prerequisites: NONE<br>
+Antirequisites: NONE<br>
+Instructor: Stephen Watt<br>
+Methods of Evaluation: Assignments(4) - 15%, Weekly Labs(20%), Midterm(20%), Final Exam (45%)<br>
+Assignment Information: Assignment 1 - Due Feb 2nd (3%), Assignment 2 - Due Feb 23 (4%), Assignment 3 - Due Mar 9 (4%), Assignment 4 - Due Mar 10 (4%)<br>
+Additional Information: You may contact the course instructor via e-mail with brief questions regarding course material or clarification of assignments. However, please first check the course website for answers to frequently asked questions, or to see if the information is already there, before e-mailing the instructor. You must include CS2034 in the subject line (otherwise it might get filtered as spam). Please send E-mail from your UWO account and send E-mail in plain text format.<br>
 
 ## Known Issues
 Processing larger syllabus files may take longer (approximately 15-30 seconds). Please be patient during the extraction process.
