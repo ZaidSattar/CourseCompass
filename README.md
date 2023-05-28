@@ -31,11 +31,11 @@ Suppose you have a course syllabus for "CS 2034B Data Analytics" from Western Un
 
 
 Course: CS 2034b Data Analytics<br>
-Prerequisites: NONE<br>
-Antirequisites: NONE<br>
-Instructor: Stephen Watt<br>
-Methods of Evaluation: Assignments(4) - 15%, Weekly Labs(20%), Midterm(20%), Final Exam (45%)<br>
-Assignment Information: Assignment 1 - Due Feb 2nd (3%), Assignment 2 - Due Feb 23 (4%), Assignment 3 - Due Mar 9 (4%), Assignment 4 - Due Mar 10 (4%)<br>
+Prerequisites: NONE<br><br>
+Antirequisites: NONE<br><br>
+Instructor: Stephen Watt<br><br>
+Methods of Evaluation: Assignments(4) - 15%, Weekly Labs(20%), Midterm(20%), Final Exam (45%)<br><br>
+Assignment Information: Assignment 1 - Due Feb 2nd (3%), Assignment 2 - Due Feb 23 (4%), Assignment 3 - Due Mar 9 (4%), Assignment 4 - Due Mar 10 (4%)<br><br>
 Additional Information: You may contact the course instructor via e-mail with brief questions regarding course material or clarification of assignments. However, please first check the course website for answers to frequently asked questions, or to see if the information is already there, before e-mailing the instructor. You must include CS2034 in the subject line (otherwise it might get filtered as spam). Please send E-mail from your UWO account and send E-mail in plain text format.<br>
 
 ## Known Issues
