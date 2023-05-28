@@ -27,11 +27,7 @@ To run Course Compass, you need to ensure that the following dependencies are in
 
 ## Example
 
-Suppose you have a course syllabus for "CS 2034B Data Analytics" from 
-
-
-
-stern University. After uploading the PDF, Course Compass will extract the following information:
+Suppose you have a course syllabus for "CS 2034B Data Analytics" from Western University. After uploading the PDF, Course Compass will extract the following information:
 
 
 Course: CS 2034b Data Analytics
