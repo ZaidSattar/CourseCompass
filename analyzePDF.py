@@ -5,7 +5,7 @@ from transformers import pipeline
 import textwrap
 
 # Set up your OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "REPLACE(SEE INSTRUCTIONS)"
 
 keywords = ['prerequisite', 'antirequisite', 'book', 'assignment', 'test', 'quiz', 'lab','exam','important']
 
