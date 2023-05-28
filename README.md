@@ -1,40 +1,55 @@
 # Course Compass
 
-
-
+Course Compass is a Python-based project that allows users to upload a PDF of their course outline. The program will then extract important course information and display it to the users. It aims to simplify the process of extracting key details from course outlines such as prerequisites, antirequisites, textbooks needed, important dates, test information, and grade distribution/methods of evaluation.
 
 ## Table of Contents
-1. [About](#about)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [Examples](#examples)
-6. [License](#license)
-
-## About
-Course Compass is a powerful AI-driven tool that digitizes your course syllabus. It extracts and organizes key details like course dates, evaluation methods, schedules, prerequisites, and grade distribution from uploaded PDFs, providing an easy and effective way to manage course information.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+- [Known Issues](#known-issues)
+- [Future Plans](#future-plans)
+- [Contributing](#contributing)
 
 ## Installation
-To install Course Compass, clone the repository and follow the installation guide:
 
-Step 1:
-------------------------------
-![Step_1](images/step1.PNG)
+To run Course Compass, you need to ensure that the following dependencies are installed:
 
-Step 2:
-------------------------------
-![Step_2](images/step2.PNG)
-
-No specific prerequisites or software dependencies are required.
+- openai: Install using `pip install openai`
+- tkinter: Install using `pip install tkinter`
+- textwrap: Install using `pip install textwrap`
 
 ## Usage
-To use Course Compass, simply run the program on a live server and upload your syllabus in PDF format. The AI will automatically extract and organize the relevant details.
+
+1. Download the main.py and analyzePDF.py files and place them in a folder.
+2. Open the folder with your preferred Python environment.
+3. Open the main.py file and replace the API key on the 8th line (`openai.api_key = "REPLACE(SEE INSTRUCTIONS)"`) with your ChatGPT API key. Instructions for obtaining the API key can be found here.
+4. Run the main.py file. A GUI window will appear, allowing you to upload your PDF course outline.
+
+## Example
+
+Suppose you have a course syllabus for "CS 2034B Data Analytics" from 
+
+
+
+stern University. After uploading the PDF, Course Compass will extract the following information:
+
+
+Course: CS 2034b Data Analytics
+Prerequisites: NONE
+Antirequisites: NONE
+Instructor: Stephen Watt
+Methods of Evaluation: Assignments(4) - 15%, Weekly Labs(20%), Midterm(20%), Final Exam (45%)
+Assignment Information: Assignment 1 - Due Feb 2nd (3%), Assignment 2 - Due Feb 23 (4%), Assignment 3 - Due Mar 9 (4%), Assignment 4 - Due Mar 10 (4%)
+Additional Information: You may contact the course instructor via e-mail with brief questions regarding course material or clarification of assignments. However, please first check the course website for answers to frequently asked questions, or to see if the information is already there, before e-mailing the instructor. You must include CS2034 in the subject line (otherwise it might get filtered as spam). Please send E-mail from your UWO account and send E-mail in plain text format.
+
+## Known Issues
+Processing larger syllabus files may take longer (approximately 15-30 seconds). Please be patient during the extraction process.
+
+## Future Plans
+Currently, the focus of Course Compass is on the functional aspects of extracting course information. Visually, there is room for improvement and enhancements. If you have ideas or suggestions to make the project visually appealing or want to contribute to its overall design, your contributions are most welcome.
 
 ## Contributing
-We welcome contributions! If you're interested in improving Course Compass, feel free to fork the repository, make your changes, and create a pull request. If you're new to contributing to open-source projects on GitHub, this guide may be helpful.
+Contributions are welcome to Course Compass. If you have any ideas, suggestions, or bug fixes, please submit them as issues or pull requests on the project repository. Your contributions will be greatly appreciated.
 
-## Examples
-Detailed examples and visual guides will be added soon.
+Please note that the emphasis of the project has been on the functionality part, and there is significant scope for visual improvements. If you are interested in enhancing the project's visual aesthetics, feel free to contribute and make it visually appealing.
 
-## License
-Course Compass is an open-source project. Currently, it is unlicensed and free to use. Please consider contributing to improve the tool!
