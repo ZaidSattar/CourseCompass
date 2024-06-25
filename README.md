@@ -14,21 +14,20 @@ Course Compass is a Python-based project that allows users to upload a PDF of th
 
 To run Course Compass, you need to ensure that the following dependencies are installed:
 
-- openai: Install using `pip install openai`
-- tkinter: Install using `pip install tkinter`
-- textwrap: Install using `pip install textwrap`
+- cohere: Install using `pip install cohere`
+- tkinter: Already part of the standard library in Python, no installation needed unless you're working with a minimal Python installation.
+- PyPDF2: Install using `pip install PyPDF2`
 
 ## Usage
 
 1. Download the main.py and analyzePDF.py files and place them in a folder.
 2. Open the folder with your preferred Python environment.
-3. Open the main.py file and replace the API key on the 8th line (`openai.api_key = "REPLACE(SEE INSTRUCTIONS)"`) with your ChatGPT API key. Instructions for obtaining the API key can be found here.
+3. Open the main.py file and replace the API key on the 8th line (`co = cohere.Client('your-cohere-api-key')`) with your Cohere API key. Instructions for obtaining the API key can be found [here](https://os.cohere.ai).
 4. Run the main.py file. A GUI window will appear, allowing you to upload your PDF course outline.
 
 ## Example
 
 Suppose you have a course syllabus for "CS 2034B Data Analytics" from Western University. After uploading the PDF, Course Compass will extract the following information:
-
 
 Course: CS 2034b Data Analytics<br><br>
 Prerequisites: NONE<br><br>
@@ -48,4 +47,3 @@ Currently, the focus of Course Compass is on the functional aspects of extractin
 Contributions are welcome to Course Compass. If you have any ideas, suggestions, or bug fixes, please submit them as issues or pull requests on the project repository. Your contributions will be greatly appreciated.
 
 Please note that the emphasis of the project has been on the functionality part, and there is significant scope for visual improvements. If you are interested in enhancing the project's visual aesthetics, feel free to contribute and make it visually appealing.
-
