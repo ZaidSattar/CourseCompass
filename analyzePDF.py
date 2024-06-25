@@ -1,14 +1,12 @@
 import PyPDF2
-import openai
+import cohere
 import re
-from transformers import pipeline
-import textwrap
+import tkinter as tk
 
-# Set up your OpenAI API credentials
-openai.api_key = "REPLACE(SEE INSTRUCTIONS)"
+# Initialize Cohere client
+co = cohere.Client('your-cohere-api-key')
 
-keywords = ['prerequisite', 'antirequisite', 'book', 'assignment', 'test', 'quiz', 'lab','exam','important']
-
+keywords = ['prerequisite', 'antirequisite', 'book', 'assignment', 'test', 'quiz', 'lab', 'exam', 'important']
 
 def analyze_pdf(filename):
     # Open the PDF file in read binary mode
@@ -51,15 +49,14 @@ def analyze_pdf(filename):
             print(f"Context: {context_text}")
             print(f"The number of characters in this context: {len(context_text)}")
 
-        prompt = f"PDF Text: {relevant_text}\n\nFind the answers to the following questions and answer in the provided format:\n{questions}"
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+        # Using Cohere's chat to analyze context
+        response = co.chat(
+            model="large",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": prompt}
+                {"role": "user", "text": f"Summarize this content: {context_text}"}
             ]
         )
-        answer = response.choices[0].message.content.strip()
+        answer = response.generations[0].text.strip()
 
         window = tk.Tk()
         window.title("Course Compass")
@@ -76,3 +73,6 @@ def analyze_pdf(filename):
         close_button.pack(pady=10)
 
         window.mainloop()
+
+# Example usage
+analyze_pdf('path_to_your_pdf_file.pdf')
